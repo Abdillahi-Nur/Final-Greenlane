@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Greenlane Masjid</title>
+</head>
+<body onload="initClock()">
+    <header>
+        <div class="navbar">
+            <a class="facebook-logo" target="_blank" href="https://www.facebook.com/GreenLaneMasjid/"><i class="fa fa-facebook-f"></i></a>
+            <a class="twitter-logo" target="_blank" href="https://twitter.com/greenlanemasjid/"><i class="fa fa-twitter" ></i></a>
+            <a class="youtube-logo" target="_blank" href="https://youtube.com/greenlanemosque/"><i class="fa fa-youtube"></i></a>
+            <a class="instagram-logo" target="_blank" href="https://www.instagram.com/greenlanemosque/"><i class="fa fa-instagram"></i></a>
+
+            <br>
+            <a href="#"><p>ABOUT US</p></a>
+            <a href="#"><p>GLM TV</p></a>
+            <a href="#"><p>RESOURCES</p></a>
+            <a href="#"><p>CONTACT US</p> </a>
+            <a href="#"><p>MASJID PROJECTS</p></a>
+            <a href="#"><p>BOOK</p></a>
+        </div>
+    
+            <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="Close Navigation">
+                    <a href="#"><p class="first-p-child-menu">RAMADAN 2021</p></a>
+                    <a href="#"><p>ABOUT US</p></a>
+                    <a href="#"><p>GLM TV</p></a>
+                    <a href="#"><p>RESOURCES</p></a>
+                    <a href="#"><p>CONTACT US</p> </a>
+                    <a href="#"><p>MASJID PROJECTS</p></a>
+                    <a href="#"><p>BOOK</p></a>
+                    <a href="#"><p>DONATE</p></a>
+                    <a href="#"><p>EDUCATION</p></a>
+                    <a href="#"><p>DA’WAH & OUTREACH</p></a>
+                    <a href="#"><p>WELFARE SERVICES</p></a>
+                    <a href="#"><p>HUMANITARIAN RELIEF</p></a>
+                    <a href="#"><p>SOCIAL & YOUTH</p></a>
+                    <div class="social-media">
+                        <a class="facebook-logo2" target="_blank" href="https://facebook.com/greenlanemasjid/"><i class="fa fa-facebook-f"></i></a>
+                        <a class="twitter-logo2" target="_blank" href="https://twitter.com/greenlanemasjid/"><i class="fa fa-twitter" ></i></a>
+                        <a class="youtube-logo2" target="_blank" href="https://youtube.com/greenlanemosque/"><i class="fa fa-youtube"></i></a>
+                        <a class="instagram-logo2" target="_blank" href="https://instagram.com/greenlanemosque/"><i class="fa fa-instagram"></i></a>
+                    </div>
+            </nav>
+
+        <div class="nav-2">
+            <a class="glm-logo-a" href="#"><img class="glm-logo-img" src="./images/Greenlane Masjid.png" alt=""></a>
+
+            <a class="search-a" href="#"><i class="fa fa-search search"></i></a>
+
+                 <!-- modal -->
+            <div class="modal-overlay">
+                <div class="modal-container">
+                <h3><input class="search-input" type="text" placeholder="Search.."></h3>
+                <button class="close-btn">
+                    <i class="fa fa-times"></i>
+                </button>
+                </div>
+            </div>
+
+            <a class="burger-a" href="#"><i id="mobile-cta" class="fa fa-bars burger"></i></a>
+
+            <a href="#"><p>DONATE</p></a>
+            <a href="#"><p>EDUCATION</p></a>
+            <a href="#"><p>DA’WAH & OUTREACH</p></a>
+            <a href="#"><p>WELFARE SERVICES</p></a>
+            <a href="#"><p>HUMANITARIAN RELIEF</p></a>
+            <a href="#"><p>SOCIAL & YOUTH</p></a>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <section><img src="./images/unnamed (1).jpg" alt=""></section>
+                    <section><img src="./images/unnamed (2).jpg" alt=""></section>
+                    <section><img src="./images/unnamed.jpg" alt=""></section>
+                </div>
+                <div class="controls">
+                    <span class="arrow left"><i class="fa fa-angle-left"></i></span>
+                    <span class="arrow right"><i class="fa fa-angle-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-banner-table">
+        <section class="table">
+            <table class="table-1">
+                <tr>
+                    <th colspan="2" class="prayer-times">PRAYER TIMES</th>
+                    <th colspan="2" class="activities">ACTIVITIES</th>
+                </tr>
+                <table class="table-2">
+                    <tr>
+                        <th colspan="4" class="daily-prayer-times"> <span class="d">D</span>aily Prayer Times</th>
+                    </tr>
+                    <tr>
+                        <th class="march" colspan="2"> 
+                            <div class="date datetime">
+                                <span id="month">Month</span>
+                              </div>
+                    <span class="tenth"><span id="daynum">00</span></span></th>
+                        <th class="current" colspan="2">Current Time <br> <span class="time-color">
+                            <div class="time datetime">
+                                <span id="hour">00</span>:
+                                <span id="minutes">00</span>:
+                                <span id="seconds">00</span>
+                                <span id="period">AM</span>
+                              </div>
+                        </span></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="start">START</td>
+                        <td class="jamat">JAMAT</td>
+                    </tr>
+                    <tr>
+                        <td class="fajr">FAJR</td>
+                        <td><img class="fajr-icon" src="./images/icon-fajr.svg" alt="fajr-icon"></td>
+                        <td>5:02 AM</td>
+                        <td>5:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td class="sunrise">SUNRISE</td>
+                        <td><img class="sunrise-icon" src="./images/icon-sunrise.svg" alt="sunrise-icon"></td>
+                        <td>6:33 AM</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="dhuhr">DHUHR</td>
+                        <td><img class="dhuhr-icon" src="./images/icon-dhuhr.svg" alt="dhuhr-icon"></td>
+                        <td>12:18 PM</td>
+                        <td>12:45 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="asr">ASR</td>
+                        <td><img class="asr-icon" src="./images/icon-asr.svg" alt="asr-icon"></td>
+                        <td>3:18 PM</td>
+                        <td>3:45 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="maghrib">MAGHRIB</td>
+                        <td><img class="maghrib-icon" src="./images/icon-maghrib.svg" alt="maghrib-icon"></td>
+                        <td>6:03 PM</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="isha">ISHA</td>
+                        <td><img class="isha-icon" src="./images/icon-isha.svg" alt="isha-icon"></td>
+                        <td>7:29 PM</td>
+                        <td>8:00 PM</td>
+                    </tr>
+                </table>
+                <table class="table-3">
+                    <tr>
+                        <th colspan="4" class="jummah-khutbah-h"><span class="j">J</span>umu'ah Khutbah</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Will be delivered by <a href="">Shaykh Mustafa Abu Rayyan</a> in <span class="english-bold">English</span> at <span class="time-bold">1:15 pm</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><button class="full-prayer-times">FULL PRAYER TIMES</button></td>
+                    </tr>
+
+                </table>
+            </table>
+        </section>
+        <section class="table2">
+            <table class="table2-1">
+                <tr>
+                    <th colspan="2" class="prayer-times2">PRAYER TIMES</th>
+                    <th colspan="2" class="activities2">ACTIVITIES</th>
+                </tr>
+                <table class="table-activities">
+                    <tr class="activities-time activities-title">
+                        <td>Monday <span class="activities-title-date-color"> 05/07</span></td>
+                    </tr>
+                    <tr class="activities-time">
+                        <td>9:30am - 5:30pm</td>
+                    </tr>
+                    <tr class="activities-text"> 
+                        <td>Legal Surgery</td>
+                    </tr>
+                    <tr class="activities-contact">
+                        <td>Telephone</td>
+                    </tr>
+                    <tr class="activities-time">
+                        <td>10:00am - 2:00pm</td>
+                    </tr>
+                    <tr class="activities-text">
+                        <td>Domestic Violence Drop In Service</td>
+                    </tr>
+                    <tr class="activities-contact">
+                        <td></td>
+                    </tr>
+                    <tr class="activities-time">
+                        <td>11:00am - 3:00pm</td>
+                    </tr>
+                    <tr class="activities-text">
+                        <td>Immigration Surgery</td>
+                    </tr>
+                    <tr class="activities-contact">
+                        <td>Telephone</td>
+                    </tr>
+                    <tr class="activities-time">
+                        <td>11:00am - 2:00pm</td>
+                    </tr>
+                    <tr class="activities-text">
+                        <td>Imam Q&A</td>
+                    </tr>
+                    <tr class="activities-contact">
+                        <td>Tel/Email</td>
+                    </tr>
+                    <tr class="activities-time">
+                        <td>9:30pm - 10:30pm</td>
+                    </tr>
+                    <tr class="activities-text">
+                        <td>40 Hadith on the Call to Islam</td>
+                    </tr>
+                    <tr class="activities-contact">
+                        <td>online</td>
+                    </tr>
+                </table>
+            </table>
+        </section>
+    </div>
+
+    <section class="jummah-announcement">
+        <div class="jummah-announcement-info">
+            <h2 class="jummah-announcment-h">Jumu'ah Announcement</h2>
+            <div class="jummah-announcment-p">
+                <p>Unfortunately, due to the current situation we have had to significantly reduce the capacity for Jumu’ah prayers down to 150 spaces in each prayer.
+                    Please do not travel to the Masjid if you have not registered.</p>
+                <p>1) There will be three Jumu’ah khutbahs performed:</p>
+                <p>12.30pm – Shaykh Ahsan Hanif; 1.15pm – Shaykh Hafeezullah Khan; 2.00pm – Shaykh Mustafa Abu Rayyan</p>
+                <p>2) The khutbah and salah will be shortened and will not exceed 20 minutes in total.</p>
+                <p>DO NOT attend if you are unwell or have symptoms of COVID-19.</p>
+                <p>All khutbahs will be posted later in the afternoon on our YouTube & Facebook pages InshaAllah.</p>
+            </div>
+            <button class="register-here">REGISTER HERE</button>
+            <button class="continue-supporting-glmcc">CONTINUE SUPPORTING GLMCC</button>
+        </div>
+    </section>
+
+    <section class="images">
+        <a class="girls-youth-club photo" href="#">
+                <img src="./images/girls-youth-club-1-600x400.jpg" alt="girls youth club">
+                <h2>Education</h2>
+                <p>View information on our educational offering as well as our Madrasah and ever popular Budding Believers Club</p>
+        </a>  
+
+        <a class="tafseer-class photo" href="">
+            <img src="./images/tafseer-class-600x400.jpg" alt="tafseer classes">
+            <h2>Islamic Awareness and Outreach (Da’wah)</h2>
+            <p>Find out more about our Structured Courses, Exhibition Islam & School Visits.</p>
+        </a>
+
+        <a class="sisters-ghusl-and-shroud-workshop photo" href="#">
+            <img src="./images/sisters-ghusl-and-shroud-workshop-1-600x400.jpg" alt="">
+            <h2>Welfare Services</h2>
+            <p>See the numerous services we provide which include Foodbank, Funeral and Zakah, Street Watch and more.</p>
+        </a>
+
+        <a class="children-of-aleppo photo" href="">
+            <img src="./images/children-of-aleppo-1-600x400.jpg" alt="">
+            <h2>Humanitarian Relief</h2>
+            <p>Find out more about the work Taskforce GLM are doing all around the world.</p>
+        </a>
+
+        <a class="sisters-basketball photo" href="">
+            <img src="./images/sisters-basketball-1-600x400.jpg" alt="">
+            <h2>Social Activities and Youth Services</h2>
+            <p>Looking for somewhere to relax or something fun to get involved in? Take a look at some of our social and youth activities.</p>
+        </a>
+    </section>
+
+    <section class="recent-news">
+        <h2>RECENT NEWS</h2>
+        <h3>What's happening</h3>
+        <div class="images2">
+            <a class="vaccines photo2" href="#">
+                <img src="./images/Vaccine-e1615567737385-600x400.jpg" alt="Vaccines">
+                <p>12TH MARCH 2021</p>
+                <p>Whether you decide to take the vaccine or not – be respectful!</p>
+            </a>
+            <a class="restrictions photo2" href="#">
+                <img src="./images/WhatsApp-Image-2020-07-03-at-18.46.55-600x400.jpeg" alt="restrictions">
+                <p>29TH JANUARY 2021</p>
+                <p>Press Release: GLMCC Further tightens controls</p>
+            </a>
+            <a class="current-vacancies photo2" href="#">
+                <img src="./images/glmcc-1-600x400.jpg" alt="current-vacancies">
+                <p>29TH JANUARY 2021</p>
+                <p>CURRENT VACANCIES</p>
+            </a>
+            <a class="census photo2" href="#">
+                <img src="./images/Census2021-600x400.jpg" alt="Census 2021">
+                <p>17TH MARCH 2021</p>
+                <p>MAKING SURE MUSLIMS COUNT IN CENSUS 2021</p>
+            </a>
+            <a class="sisters-employment photo2" href="#">
+                <img src="./images/Sisters_Employed_at__Green_Lane_Masjid-600x400.jpeg" alt="sisters-employment">
+                <p>17TH MARCH 2021</p>
+                <p>SISTERS FULFIL KEY ROLES AT GREEN LANE MASJID</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <div class="column-1">
+                <h2>Green Lane Masjid & Community Centre</h2>
+                <p><strong>Address: </strong>Green Lane Masjid and Community Centre, 20 Green Lane, Birmingham, B9 5DB</p>
+                <p><strong>Phone: </strong>0121 713 0080</p>
+                <p><strong>Email: </strong>info@greenlanemasjid.org</p>
+                <p><strong>Office Hours: </strong>Mon-Fri: 10.00am - 5.30pm; Sat: 12.00pm - 2.00pm</p>
+                <h2>Masjid Information</h2>
+                <p>Company Registration Number: </p>
+                <p> 06552666 </p>
+                <p>Charity Registration Number:</p>
+                <p> 1125833 </p>
+            </div>
+            <div class="column-2">
+                <div class="footer-images">
+                    <img class="conservation-award" src="https://www.greenlanemasjid.org/wp-content/uploads/2019/12/conservation-award.png" alt="conservation-award">
+                    <img class="Fundraising-Badge" src="https://www.greenlanemasjid.org/wp-content/uploads/2019/06/FR-Fundraising-Badge-WO-LR.png" alt="Fundraising-Badge">
+                </div>
+                <h2 class="follow-us">Follow Us</h2>
+                <div class="social-media2">
+                    <a class="facebook-logo3" target="_blank" href="https://facebook.com/greenlanemasjid/"><i class="fa fa-facebook-f"></i></a>
+                    <a class="twitter-logo3" target="_blank" href="https://twitter.com/greenlanemasjid/"><i class="fa fa-twitter" ></i></a>
+                    <a class="youtube-logo3" target="_blank" href="https://youtube.com/greenlanemosque/"><i class="fa fa-youtube"></i></a>
+                    <a class="instagram-logo3" target="_blank" href="https://instagram.com/greenlanemosque/"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p class="newsletter-text">Subscribe to our email newsletter to receive regular updates, news & events.</p>
+                    <div class="email">
+                        <small class="email-address">Email Address</small>
+                        <input type="email">
+                        <small>
+                            "We take your privacy seriously. No spam."<br>
+                            "See our" <a href="privacy-policy">Privary Policy</a>
+                        </small>
+                    </div>
+                    <p class="copyright">© Copyright 2021 Green Lane Masjid  | <a href="privacy-policy">Privacy Policy</a> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js/carousel.js"></script>
+    <script src="./app.js/time.js"></script>
+    <script src="./app.js/modal.js"></script>
+    <script src="./app.js/menu.js"></script>
+    <script src="./app.js/table.js"></script>
+    
+</body>
+</html>
